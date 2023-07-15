@@ -5,8 +5,8 @@
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Passion One', cursive;
-    --fonte3: 'Sriracha', cursive;
+    --fonte2: 'Passion One', 'cursive';
+    --fonte3: 'Sriracha', 'cursive';
 }
 
 * {
@@ -56,21 +56,36 @@ section {
     font-size: 3vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal{
     background-color: white;
     color: black;
 }
 
 section.imagem {
-    display: inline-block;
-    padding: 5px;
     background-color: rgb(53, 53, 53);
-    color: white
+    color: white;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.28);
-    width: 500px;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+section#img01 {
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url("../imagens/background002.jpg"); 
+    background-size: cover;
 }
 
 footer {
