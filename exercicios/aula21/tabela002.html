@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background-color:gainsboro;
+        }        
+        thead > tr > th {
+            background-color:gainsboro;
+            position: sticky;
+            top: -1px;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;    
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        td.numero {
+            text-align: right;
+        }
+
+    </style>
+
+    <title>Tabelas</title>
+</head>
+
+<body>
+
+    <h1>Tabela - Grandes</h1>
+
+    <table>
+        <caption>Brasil - Estados Mais Populosos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">44.420.459</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20.538.718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16.054.524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.136.417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11.443.208</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">10.880.506</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9.058.155</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">8.791.688</td>
+            </tr>          
+            <tr>
+                <td>Pará</td>
+                <td class="numero">8.116.132</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7.609.601</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="numero">7.055.228</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">6.775.152</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="numero">3.974.495</td>
+            </tr>          
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">3.941.175</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="numero">3.833.486</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero"><strong>169.019.343</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

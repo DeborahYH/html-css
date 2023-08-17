@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 5px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        col.col_nome {
+            background-color: cadetblue;
+        }
+        col.col_grupo {
+            background-color:lightblue;
+        }
+    </style>
+
+    <title>Tabelas</title>
+</head>
+
+<body>
+
+    <h1>Tabela Completa</h1>
+
+    <table>
+        <caption>Cadastro</caption>
+        <colgroup>
+            <col class="col_nome">
+            <col class="col_grupo" span="3">
+        </colgroup>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>               
+        </tr>
+        <tr>
+            <td>Claudia Gonçalves</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Renato dos Santos</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td >Gustavo Pereira</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Desenvolvedor Web</td>
+        </tr>
+        <tr>
+            <td>Daniela Mendes</td>
+            <td>F</td>
+            <td>48</td>
+            <td>Farmacêutica</td>
+        </tr>
+        <tr>
+            <td>Bruno Rossi</td>
+            <td>M</td>
+            <td>21</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Helena Ferrari</td>
+            <td>F</td>
+            <td>35</td>
+            <td>Dentista</td>
+    </table>
+
+</body>
+
+</html>
